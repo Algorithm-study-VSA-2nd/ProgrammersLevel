@@ -1,0 +1,14 @@
+def solution(participant, completion):
+    hash_table = {}
+    for name in participant :
+        if name in hash_table :
+            hash_table[name] += 1
+        else :
+            hash_table[name] = 1
+    for name in completion :
+        if name in hash_table :
+            hash_table[name] -= 1
+            if hash_table[name] == 0 :
+                del hash_table[name]
+    for key in hash_table.keys() :
+        return key
