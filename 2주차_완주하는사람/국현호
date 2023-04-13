@@ -1,0 +1,11 @@
+def solution(participant, completion):
+    participant.sort() 
+    completion.sort() 
+    
+    
+    for i in range(len(completion)):
+        if participant[i] != completion[i]:
+            return participant[i]
+    
+    # 참가자 리스트에 마지막 선수가 완주 못했을 때
+    return participant[-1] 
