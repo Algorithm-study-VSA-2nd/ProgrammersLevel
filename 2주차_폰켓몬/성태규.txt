@@ -1,0 +1,7 @@
+폰켓몬
+
+def solution(nums):
+    N = len(nums)//2
+    hash_count = len(list(set(nums)))
+    answer = min(N,hash_count)
+    return answer
