@@ -1,0 +1,17 @@
+def solution(clothes):
+    kony={}
+    for cloth in clothes:       # hash_table 만들기
+        if cloth[1] in kony.keys():
+            kony[cloth[1]]+=1   # hash collision 막기 위해 이름의 갯수로 표현 (중복없음)
+        else:
+            kony[cloth[1]]=1 
+    result=1
+    
+    for k,v in kony.items():
+        result*=(v+1)
+    result-=1
+    
+    return result
+        
+        
+            
