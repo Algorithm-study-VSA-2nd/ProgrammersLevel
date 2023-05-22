@@ -1,0 +1,9 @@
+def solution(arr):
+    answer = []
+    for i in range(len(arr)):
+        # 새로운 숫자 반환 + [0]과 [-1] 비교할 때 발생하는 문제 해결
+        if arr[i] != arr[i-1] or arr[i] not in answer:
+            answer.append(arr[i])
+        else:
+            continue
+    return answer
