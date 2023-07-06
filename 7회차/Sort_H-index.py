@@ -9,3 +9,4 @@ def solution(citations):
     return answer
 
 solution(citations=[3,0,6,1,5])
+print('test')
