@@ -18,3 +18,4 @@ def solution(scoville, K):
         heapq.heappush(scoville, min_num)
         cnt += 1
     return cnt
+
