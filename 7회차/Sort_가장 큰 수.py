@@ -1,4 +1,3 @@
-# 다시하자
 def solution(numbers):
     # numbers의 요소들을 문자형으로 변경한 뒤 리스트에 넣는다.
     numbers = list(map(str, numbers))

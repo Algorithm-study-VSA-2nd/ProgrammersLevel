@@ -9,7 +9,7 @@ def solution(array, commands):
     answer = []
     for i in commands:
         tmp = []
-        tmp = array[i[0]-1:i[1]]
+        tmp = array[i[0]-1:i[1]]        # 슬라이싱 하여 리스트 할당
         tmp.sort()
         answer.append(tmp[i[2]-1])
     return answer
